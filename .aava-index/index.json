@@ -1,0 +1,408 @@
+{
+  "repo": "Saravanan1689/chroma",
+  "branch": "main",
+  "total_files": 100,
+  "status": "full",
+  "files": {
+    ".config/nextest.toml": {
+      "sha": "12fada9130a2d526af1d8d970e5b264b3433b3eb",
+      "summary": "TOML file: nextest.toml - contains tests, configuration file (path: .config/nextest.toml)"
+    },
+    ".dockerignore": {
+      "sha": "b6969b0dd776e30175bce329c92159f7b7d4c016",
+      "summary": "DOCKERIGNORE file: .dockerignore - contains tests, configuration file (path: .dockerignore)"
+    },
+    ".gitattributes": {
+      "sha": "6748745638378e81a7deab09cfb5389673dce2f4",
+      "summary": "GITATTRIBUTES file: .gitattributes (path: .gitattributes)"
+    },
+    ".github/CODEOWNERS": {
+      "sha": "93734feacd2afdecd4aab57ded67e36d8c7cb80c",
+      "summary": "file file: CODEOWNERS (path: .github/CODEOWNERS)"
+    },
+    ".github/DEVELOP.md": {
+      "sha": "90ba1377aabbb4210cacd20d2c7e04b8ff913c5a",
+      "summary": "Markdown docs file: DEVELOP.md - contains tests (path: .github/DEVELOP.md)"
+    },
+    ".github/ISSUE_TEMPLATE/bug_report.yaml": {
+      "sha": "fba6c0e7bb8de1307e340fcffd70603c8afc98ff",
+      "summary": "YAML config file: bug_report.yaml (path: .github/ISSUE_TEMPLATE/bug_report.yaml)"
+    },
+    ".github/ISSUE_TEMPLATE/config.yml": {
+      "sha": "587ecd17e00fc9f40e1b9d1a9e270e1e46e57db5",
+      "summary": "YAML config file: config.yml - configuration file (path: .github/ISSUE_TEMPLATE/config.yml)"
+    },
+    ".github/ISSUE_TEMPLATE/feature_request.yaml": {
+      "sha": "ee8322f79374a93aa7e8f09f7717605f83f082bf",
+      "summary": "YAML config file: feature_request.yaml (path: .github/ISSUE_TEMPLATE/feature_request.yaml)"
+    },
+    ".github/ISSUE_TEMPLATE/installation_trouble.yaml": {
+      "sha": "df7ae14a78ed8a0a5950ad6e4b4fc847a5bf73aa",
+      "summary": "YAML config file: installation_trouble.yaml (path: .github/ISSUE_TEMPLATE/installation_trouble.yaml)"
+    },
+    ".github/actions/bandit-scan/Dockerfile": {
+      "sha": "943f04fc8f3703e7f764bb5d0f9a1e9102633e9c",
+      "summary": "file file: Dockerfile - module with dependencies, container definition (path: .github/actions/bandit-scan/Dockerfile)"
+    },
+    ".github/actions/bandit-scan/action.yaml": {
+      "sha": "e0735450f57490395f6d3b9457d7ce68022f4c6d",
+      "summary": "YAML config file: action.yaml - configuration file (path: .github/actions/bandit-scan/action.yaml)"
+    },
+    ".github/actions/bandit-scan/entrypoint.sh": {
+      "sha": "f52daddd781e84e8d96003f095f48a4b684a6f53",
+      "summary": "Shell script file: entrypoint.sh (path: .github/actions/bandit-scan/entrypoint.sh)"
+    },
+    ".github/actions/build_service_images/action.yaml": {
+      "sha": "99511c049fceb18ce55d65b5a48d3118220615cc",
+      "summary": "YAML config file: action.yaml - contains business logic, configuration file (path: .github/actions/build_service_images/action.yaml)"
+    },
+    ".github/actions/docker/action.yaml": {
+      "sha": "e91c81b4495c2a9a1d0eeb9078dbfc210a7394b4",
+      "summary": "YAML config file: action.yaml (path: .github/actions/docker/action.yaml)"
+    },
+    ".github/actions/export-tilt-logs/action.yaml": {
+      "sha": "7298ea6b0ec9afcfec939a016a8343629aeb400b",
+      "summary": "YAML config file: action.yaml - contains business logic, module with dependencies (path: .github/actions/export-tilt-logs/action.yaml)"
+    },
+    ".github/actions/go/action.yaml": {
+      "sha": "8cf7c2971daa078e63abe65879ea4682535a3e65",
+      "summary": "YAML config file: action.yaml (path: .github/actions/go/action.yaml)"
+    },
+    ".github/actions/python/action.yaml": {
+      "sha": "4d27c1a5eaa0d3f78df265247e41a061b46d4fb4",
+      "summary": "YAML config file: action.yaml (path: .github/actions/python/action.yaml)"
+    },
+    ".github/actions/rust/action.yaml": {
+      "sha": "e7e464baf9d6caefcb0ecd7d6f6918442a564087",
+      "summary": "YAML config file: action.yaml (path: .github/actions/rust/action.yaml)"
+    },
+    ".github/actions/tilt-setup-prebuild/action.yaml": {
+      "sha": "9e62fcf130227db83c3d84c489ebbcaf76aa4d4e",
+      "summary": "YAML config file: action.yaml - contains tests (path: .github/actions/tilt-setup-prebuild/action.yaml)"
+    },
+    ".github/actions/tilt-setup-prebuild/docker-bake.hcl": {
+      "sha": "b3f198326fd9017a513f9ab2c65be0f1eb15cdee",
+      "summary": "HCL file: docker-bake.hcl - contains business logic, database migration (path: .github/actions/tilt-setup-prebuild/docker-bake.hcl)"
+    },
+    ".github/actions/tilt-setup-prebuild/pull_external_images.sh": {
+      "sha": "6f6f2ef1a1228dac1bd32a2d9dd47cb04d949836",
+      "summary": "Shell script file: pull_external_images.sh - configuration file (path: .github/actions/tilt-setup-prebuild/pull_external_images.sh)"
+    },
+    ".github/actions/tilt/action.yaml": {
+      "sha": "4b0d32c89d3a3f4ebf2286b06e15cbc25856c95f",
+      "summary": "YAML config file: action.yaml - contains business logic (path: .github/actions/tilt/action.yaml)"
+    },
+    ".github/workflows/_build_js_bindings.yml": {
+      "sha": "9f3980fc4de4248aecd7231f443805a906f61075",
+      "summary": "YAML config file: _build_js_bindings.yml - contains tests, configuration file (path: .github/workflows/_build_js_bindings.yml)"
+    },
+    ".github/workflows/_build_release_container.yml": {
+      "sha": "ff7ef36145071bbbd95ba5d6db7a537f7f10e587",
+      "summary": "YAML config file: _build_release_container.yml - contains tests (path: .github/workflows/_build_release_container.yml)"
+    },
+    ".github/workflows/_build_release_pypi.yml": {
+      "sha": "ea3893a99e3ad45088741900f08a5bf25ef210d6",
+      "summary": "YAML config file: _build_release_pypi.yml - contains tests (path: .github/workflows/_build_release_pypi.yml)"
+    },
+    ".github/workflows/_build_release_service_images.yml": {
+      "sha": "e4da8c1c83aac03b12ba3c2e7b4ffbecc5dcf542",
+      "summary": "YAML config file: _build_release_service_images.yml - contains business logic (path: .github/workflows/_build_release_service_images.yml)"
+    },
+    ".github/workflows/_check_rust_release.yml": {
+      "sha": "4baba1b9a4677bd693343b8e3382875c6c30653a",
+      "summary": "YAML config file: _check_rust_release.yml - contains tests, configuration file (path: .github/workflows/_check_rust_release.yml)"
+    },
+    ".github/workflows/_check_spanner_migrations.yml": {
+      "sha": "0a20ffa6daff340f00d2d5786f8db83eb3739ff6",
+      "summary": "YAML config file: _check_spanner_migrations.yml - configuration file, database migration (path: .github/workflows/_check_spanner_migrations.yml)"
+    },
+    ".github/workflows/_deploy.yml": {
+      "sha": "b434580d9efe9455a4a2cc2f0f0b4f5f27555927",
+      "summary": "YAML config file: _deploy.yml - configuration file (path: .github/workflows/_deploy.yml)"
+    },
+    ".github/workflows/_go-tests.yml": {
+      "sha": "96cedb91901515ca0f52e26f22be1fb4194ae24b",
+      "summary": "YAML config file: _go-tests.yml - contains tests (path: .github/workflows/_go-tests.yml)"
+    },
+    ".github/workflows/_javascript-client-tests.yml": {
+      "sha": "dd02a65976e6500b9aabb680f157d842c6bc9f13",
+      "summary": "YAML config file: _javascript-client-tests.yml - contains tests (path: .github/workflows/_javascript-client-tests.yml)"
+    },
+    ".github/workflows/_python-tests.yml": {
+      "sha": "3fd59ee2a23262cc49de8a1e1786b7f819c4c794",
+      "summary": "YAML config file: _python-tests.yml - contains tests, configuration file (path: .github/workflows/_python-tests.yml)"
+    },
+    ".github/workflows/_python-vulnerability-scan.yml": {
+      "sha": "48de42b425eace7bd97509a0b6050a73f3a6d07a",
+      "summary": "YAML config file: _python-vulnerability-scan.yml - configuration file (path: .github/workflows/_python-vulnerability-scan.yml)"
+    },
+    ".github/workflows/_rust-tests.yml": {
+      "sha": "9a2bcbb947d4e6532a0bcf5d39560e1a5fbf6fd8",
+      "summary": "YAML config file: _rust-tests.yml - contains tests (path: .github/workflows/_rust-tests.yml)"
+    },
+    ".github/workflows/apply-hotfix.yaml": {
+      "sha": "7d2a30d8bbeee1fa54ee7895b75d6951fa993400",
+      "summary": "YAML config file: apply-hotfix.yaml - contains tests (path: .github/workflows/apply-hotfix.yaml)"
+    },
+    ".github/workflows/nightly-tests.yml": {
+      "sha": "2f89414d979ac69703295a9386153a9aac67d8ea",
+      "summary": "YAML config file: nightly-tests.yml - contains tests, configuration file (path: .github/workflows/nightly-tests.yml)"
+    },
+    ".github/workflows/pr-check-title.yml": {
+      "sha": "9a698d7962789d2542b44e843fe01a61039c1fd4",
+      "summary": "YAML config file: pr-check-title.yml (path: .github/workflows/pr-check-title.yml)"
+    },
+    ".github/workflows/pr-review-checklist.yml": {
+      "sha": "c15099950c9468164a54b232bb4e10035145b959",
+      "summary": "YAML config file: pr-review-checklist.yml (path: .github/workflows/pr-review-checklist.yml)"
+    },
+    ".github/workflows/pr.yml": {
+      "sha": "209e403bf962fc6e81d0c1935b48fbe078be9de3",
+      "summary": "YAML config file: pr.yml - contains tests (path: .github/workflows/pr.yml)"
+    },
+    ".github/workflows/release-chromadb.yml": {
+      "sha": "a1d352e2b8a162a4b0b361dbc6d0f180995d6cdb",
+      "summary": "YAML config file: release-chromadb.yml (path: .github/workflows/release-chromadb.yml)"
+    },
+    ".github/workflows/release-cli.yml": {
+      "sha": "eb66b03aba6d40f56d0ef7093dcb57fbf33dff4f",
+      "summary": "YAML config file: release-cli.yml - contains business logic (path: .github/workflows/release-cli.yml)"
+    },
+    ".github/workflows/release-dev-javascript-client.yml": {
+      "sha": "4ad96d0b839e37112feae8162d2997b2bb58d048",
+      "summary": "YAML config file: release-dev-javascript-client.yml - contains tests (path: .github/workflows/release-dev-javascript-client.yml)"
+    },
+    ".github/workflows/release-helm-chart.yml": {
+      "sha": "fdb680733a3b9a5555ae1737a821cd6fa936daa3",
+      "summary": "YAML config file: release-helm-chart.yml (path: .github/workflows/release-helm-chart.yml)"
+    },
+    ".github/workflows/release-javascript-client.yml": {
+      "sha": "2cad6748ad7c01fd896c95262dd377423ee80f3a",
+      "summary": "YAML config file: release-javascript-client.yml - configuration file (path: .github/workflows/release-javascript-client.yml)"
+    },
+    ".gitignore": {
+      "sha": "6b4a3ae075e1a36f36997d3d62ce41c26b65be9c",
+      "summary": "GITIGNORE file: .gitignore - contains tests, configuration file (path: .gitignore)"
+    },
+    ".pre-commit-config.yaml": {
+      "sha": "86ed5c1515e0796322324b9f27f7042808a5056b",
+      "summary": "YAML config file: .pre-commit-config.yaml - contains business logic, configuration file (path: .pre-commit-config.yaml)"
+    },
+    ".taplo.toml": {
+      "sha": "82b29787aa3fc329d540db926324d5645d730afc",
+      "summary": "TOML file: .taplo.toml (path: .taplo.toml)"
+    },
+    ".vscode/settings.json": {
+      "sha": "917880ecb47704c41c112efd40d684352f13362b",
+      "summary": "JSON config file: settings.json - contains tests, configuration file (path: .vscode/settings.json)"
+    },
+    "AGENTS.md": {
+      "sha": "ddc88d378dc9c013c79ac692954c9a3f939834b1",
+      "summary": "Markdown docs file: AGENTS.md (path: AGENTS.md)"
+    },
+    "CLAUDE.md": {
+      "sha": "ad428f6977d43cb6d63e579a9a6ab2e53f43151e",
+      "summary": "Markdown docs file: CLAUDE.md - contains tests (path: CLAUDE.md)"
+    },
+    "Cargo.lock": {
+      "sha": "4b213085d14cedc98b281a2908964777889af8c7",
+      "summary": "LOCK file: Cargo.lock (path: Cargo.lock)"
+    },
+    "Cargo.toml": {
+      "sha": "49c6709469da3da82326724d03dd9d8975c4c5d2",
+      "summary": "TOML file: Cargo.toml - contains business logic, configuration file (path: Cargo.toml)"
+    },
+    "DEVELOP.md": {
+      "sha": "a41050a0ae5da07a28d633073480d80a7c38b03e",
+      "summary": "Markdown docs file: DEVELOP.md - contains tests, configuration file (path: DEVELOP.md)"
+    },
+    "Dockerfile": {
+      "sha": "31415cbad3a6a3e43f0af8fe4b789636f0960386",
+      "summary": "file file: Dockerfile - module with dependencies, configuration file (path: Dockerfile)"
+    },
+    "Dockerfile.windows": {
+      "sha": "7085f26b196ac9bd2907acf491ff1595ae902c34",
+      "summary": "WINDOWS file: Dockerfile.windows - contains business logic, module with dependencies (path: Dockerfile.windows)"
+    },
+    "LICENSE": {
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "summary": "file file: LICENSE - defines data models (path: LICENSE)"
+    },
+    "README.md": {
+      "sha": "305e502cb004ab943add38050c272debfaf5e1bb",
+      "summary": "Markdown docs file: README.md (path: README.md)"
+    },
+    "RELEASE_PROCESS.md": {
+      "sha": "73edffac0daa318e83f1d53767a5727044234b85",
+      "summary": "Markdown docs file: RELEASE_PROCESS.md (path: RELEASE_PROCESS.md)"
+    },
+    "Tiltfile": {
+      "sha": "a31db99970fec60ce4b555de11c1cd6779dcd8e2",
+      "summary": "file file: Tiltfile - contains tests, configuration file (path: Tiltfile)"
+    },
+    "bandit.yaml": {
+      "sha": "9a93633ea12a81e8a03a3f19b4bf38a17a1d3753",
+      "summary": "YAML config file: bandit.yaml - contains tests, configuration file (path: bandit.yaml)"
+    },
+    "bin/ci/determine-tests-to-run.sh": {
+      "sha": "6271ccb37e893e37a0c2b662c7cc4f12a2d7d906",
+      "summary": "Shell script file: determine-tests-to-run.sh - contains tests, module with dependencies (path: bin/ci/determine-tests-to-run.sh)"
+    },
+    "bin/cluster-test.sh": {
+      "sha": "f8da0e9eb7d8ee7c22c1285758966c4a8ae8340d",
+      "summary": "Shell script file: cluster-test.sh - contains tests, configuration file (path: bin/cluster-test.sh)"
+    },
+    "bin/docker_entrypoint.ps1": {
+      "sha": "f172faa35650a52b9f9f5e7e899fbb07e257e024",
+      "summary": "PS1 file: docker_entrypoint.ps1 - defines classes/functions, configuration file (path: bin/docker_entrypoint.ps1)"
+    },
+    "bin/docker_entrypoint.sh": {
+      "sha": "10fed5b0cb4cafd8af538a5107ba9b4c07ecda88",
+      "summary": "Shell script file: docker_entrypoint.sh - module with dependencies (path: bin/docker_entrypoint.sh)"
+    },
+    "bin/generate_cloudformation.py": {
+      "sha": "4265e0c2a52be8589a8885ef528bb3968788c1c0",
+      "summary": "Python file: generate_cloudformation.py - defines classes/functions, module with dependencies (path: bin/generate_cloudformation.py)"
+    },
+    "bin/generate_operator_constants.sh": {
+      "sha": "41dd2a2d0bf754d6d47f4925371f80d3efcccd88",
+      "summary": "Shell script file: generate_operator_constants.sh - defines data models, module with dependencies (path: bin/generate_operator_constants.sh)"
+    },
+    "bin/get-logs.sh": {
+      "sha": "b0f7780455fbd4ebeb66779ba6ee80b08a3e9beb",
+      "summary": "Shell script file: get-logs.sh - contains tests, configuration file (path: bin/get-logs.sh)"
+    },
+    "bin/python-integration-test": {
+      "sha": "55b90bf8f3a6e017c65e3f30ae18a8145fd74cfc",
+      "summary": "file file: python-integration-test - defines classes/functions, contains tests (path: bin/python-integration-test)"
+    },
+    "bin/rust-integration-test.sh": {
+      "sha": "5e0a1797a49a9999697b2e1d5cfa0ba1f5b79bc2",
+      "summary": "Shell script file: rust-integration-test.sh - contains tests, configuration file (path: bin/rust-integration-test.sh)"
+    },
+    "bin/rust_python_compat_test.py": {
+      "sha": "47b1c370f1f5afae484d588a0ca8c74b57668ac4",
+      "summary": "Python file: rust_python_compat_test.py - contains tests, module with dependencies (path: bin/rust_python_compat_test.py)"
+    },
+    "bin/rust_single_node_integration_test_config.yaml": {
+      "sha": "b58c92bd5b4824ba7fb46ee94f6e42007ee96e05",
+      "summary": "YAML config file: rust_single_node_integration_test_config.yaml - contains business logic, contains tests (path: bin/rust_single_node_integration_test_config.yaml)"
+    },
+    "bin/templates/docker-compose.yml": {
+      "sha": "d3199d6150ac24ae55d49cb9c00acf2c4c358f90",
+      "summary": "YAML config file: docker-compose.yml - contains business logic (path: bin/templates/docker-compose.yml)"
+    },
+    "bin/test-package/install.sh": {
+      "sha": "3b725cf94f080ed9bae62a564df10421acaf4e3f",
+      "summary": "Shell script file: install.sh - contains tests, module with dependencies (path: bin/test-package/install.sh)"
+    },
+    "bin/test-package/test-package.sh": {
+      "sha": "03e9a8a6c746055003c98a9d12848ecc26d04063",
+      "summary": "Shell script file: test-package.sh - contains tests, module with dependencies (path: bin/test-package/test-package.sh)"
+    },
+    "bin/test-package/test-thin-client-package.sh": {
+      "sha": "1d5214760edf08ec26642233ac29cdf9b8a87463",
+      "summary": "Shell script file: test-thin-client-package.sh - contains tests, module with dependencies (path: bin/test-package/test-thin-client-package.sh)"
+    },
+    "bin/test-remote": {
+      "sha": "239d5a5473ea478fe113d431717bf8fb88da2dc3",
+      "summary": "file file: test-remote - contains tests, configuration file (path: bin/test-remote)"
+    },
+    "bin/test.py": {
+      "sha": "61607b99146f24bd646adec0c6a911cae668034e",
+      "summary": "Python file: test.py - contains tests, module with dependencies (path: bin/test.py)"
+    },
+    "bin/ts-integration-test.sh": {
+      "sha": "67bacb41d23c8a8039c425edcd5cad385407c36c",
+      "summary": "Shell script file: ts-integration-test.sh - contains tests, configuration file (path: bin/ts-integration-test.sh)"
+    },
+    "bin/version": {
+      "sha": "41eb44c3d925b92a730bd5f46c09f794124b73b7",
+      "summary": "file file: version - configuration file (path: bin/version)"
+    },
+    "bin/windows_upgrade_sqlite.py": {
+      "sha": "f38ba308e99e8333fd488547858b9941eca003a6",
+      "summary": "Python file: windows_upgrade_sqlite.py - module with dependencies (path: bin/windows_upgrade_sqlite.py)"
+    },
+    "chromadb/__init__.py": {
+      "sha": "0be492da7d0408d36ab7d17fea376520c3c5e631",
+      "summary": "Python file: __init__.py - module with dependencies, configuration file (path: chromadb/__init__.py)"
+    },
+    "chromadb/api/__init__.py": {
+      "sha": "03a4a25b98f5a7681c2169d2ef1ef1b5b72a6174",
+      "summary": "Python file: __init__.py - module with dependencies (path: chromadb/api/__init__.py)"
+    },
+    "chromadb/api/async_api.py": {
+      "sha": "4aa69e602eaa56ea018cd472fc5852f945aaf828",
+      "summary": "Python file: async_api.py - defines data models, module with dependencies (path: chromadb/api/async_api.py)"
+    },
+    "chromadb/api/async_client.py": {
+      "sha": "a167c83e2901a036ad7f38e1cd737d5d72fe95ef",
+      "summary": "Python file: async_client.py - defines data models, module with dependencies (path: chromadb/api/async_client.py)"
+    },
+    "chromadb/api/async_fastapi.py": {
+      "sha": "5e87fab7045779d0f25c04c211b8c51fd01763fc",
+      "summary": "Python file: async_fastapi.py - defines data models, module with dependencies (path: chromadb/api/async_fastapi.py)"
+    },
+    "chromadb/api/base_http_client.py": {
+      "sha": "1f05ad1c2b07e84d2d1f274128ee39bf59da0276",
+      "summary": "Python file: base_http_client.py - defines classes/functions, module with dependencies (path: chromadb/api/base_http_client.py)"
+    },
+    "chromadb/api/client.py": {
+      "sha": "71a22bdeeae40631e3dc7bf1f3d05c0fdcbafb62",
+      "summary": "Python file: client.py - module with dependencies, configuration file (path: chromadb/api/client.py)"
+    },
+    "chromadb/api/collection_configuration.py": {
+      "sha": "e18ca62cf7d103584c7a1c52fc8fed9cc9262f2d",
+      "summary": "Python file: collection_configuration.py - defines classes/functions, defines data models (path: chromadb/api/collection_configuration.py)"
+    },
+    "chromadb/api/configuration.py": {
+      "sha": "7e1fbaaee1d040359e0a37d116a8c13ddf3692ab",
+      "summary": "Python file: configuration.py - defines classes/functions, module with dependencies (path: chromadb/api/configuration.py)"
+    },
+    "chromadb/api/fastapi.py": {
+      "sha": "0a41b2b0bb25203df24d4f5dbe33c04baf1cc6f4",
+      "summary": "Python file: fastapi.py - defines classes/functions, defines data models (path: chromadb/api/fastapi.py)"
+    },
+    "chromadb/api/functions.py": {
+      "sha": "86647172b35a2643db9310bc2cb6eaa299e5a3b2",
+      "summary": "Python file: functions.py - defines classes/functions, module with dependencies (path: chromadb/api/functions.py)"
+    },
+    "chromadb/api/models/AsyncCollection.py": {
+      "sha": "2d898dde461ed84b231240ec3a711e49c2866b14",
+      "summary": "Python file: AsyncCollection.py - defines data models, module with dependencies (path: chromadb/api/models/AsyncCollection.py)"
+    },
+    "chromadb/api/models/AttachedFunction.py": {
+      "sha": "750ea60d28f0f07c2489e74c5381e47c5511b8ae",
+      "summary": "Python file: AttachedFunction.py - defines classes/functions, defines data models (path: chromadb/api/models/AttachedFunction.py)"
+    },
+    "chromadb/api/models/Collection.py": {
+      "sha": "55c4f73953e67f8379103a63281063fa7ba5d26e",
+      "summary": "Python file: Collection.py - defines data models, module with dependencies (path: chromadb/api/models/Collection.py)"
+    },
+    "chromadb/api/models/CollectionCommon.py": {
+      "sha": "466f133dfb1365a58fbd9feec8100a8635d5ec34",
+      "summary": "Python file: CollectionCommon.py - defines data models, module with dependencies (path: chromadb/api/models/CollectionCommon.py)"
+    },
+    "chromadb/api/rust.py": {
+      "sha": "51061ab754650f68d2d3f7023aebac72b718d1dd",
+      "summary": "Python file: rust.py - defines classes/functions, defines data models (path: chromadb/api/rust.py)"
+    },
+    "chromadb/api/segment.py": {
+      "sha": "412c54a962821e05b3a4e16ebdd3b08f19e2462d",
+      "summary": "Python file: segment.py - defines classes/functions, defines data models (path: chromadb/api/segment.py)"
+    },
+    "chromadb/api/shared_system_client.py": {
+      "sha": "13ceeb1fec4a1a61fe54ea73faf649880f35c161",
+      "summary": "Python file: shared_system_client.py - defines classes/functions, module with dependencies (path: chromadb/api/shared_system_client.py)"
+    },
+    "chromadb/api/types.py": {
+      "sha": "ef5aab7592640010c60f50625e0856bc23e91487",
+      "summary": "Python file: types.py - defines data models, module with dependencies (path: chromadb/api/types.py)"
+    },
+    "chromadb/app.py": {
+      "sha": "420bc2fce42d770a765f6f1172f8de1e601b87ad",
+      "summary": "Python file: app.py - module with dependencies, configuration file (path: chromadb/app.py)"
+    }
+  }
+}
