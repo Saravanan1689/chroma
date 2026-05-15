@@ -2,7 +2,7 @@
   "repo": "Saravanan1689/chroma",
   "branch": "main",
   "total_files": 1926,
-  "status": "full",
+  "status": "incremental",
   "files": {
     ".config/nextest.toml": {
       "sha": "12fada9130a2d526af1d8d970e5b264b3433b3eb",
