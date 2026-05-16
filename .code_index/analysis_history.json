@@ -1,6 +1,22 @@
 [
   {
     "repoId": "Saravanan1689/chroma",
+    "confidence": "LOW",
+    "errorMessage": "CVE-2023-4641: Password/secret buffer not zeroed on failed authentication attempt",
+    "analysedAt": "2026-05-16T13:16:31.547280Z",
+    "feedbackReceived": false,
+    "affectedFiles": ["<Unable to identify specific affected files from the retrieved chunks>"],
+    "suggestedFix": "Without visibility into the actual authentication/credential handling code, the general fix for the CVE-2023-4641 pattern in this codebase would be: (1) In Rust code, use `zeroize::Zeroize` or `secrecy::Secret<String>` for any buffer holding passwords, API keys, or tokens, ensuring they are zeroed on drop \u2014 especially on validation failure paths. (2) In Python code, use `bytearray` instead of `str` for secrets so they can be overwritten with zeros after use. (3) Audit any authentication middleware (likely in `rust/worker/` or a frontend-core/foundation-api crate given recent commits b41866e and b4b2325) for patterns where a first password/token entry remains in a `String` after a mismatch or failed confirmation. The specific fix would be to call `.zeroize()` on the secret buffer in every error/mismatch branch before returning.",
+    "branch": "main",
+    "errorSignature": "15d0ab609b3f2cccaaed55ee9fe9b5e5e783311f1bf8c3a36ded927400b0b4fc",
+    "rootCause": "The CVE-2023-4641 pattern (password/secret buffer not zeroed after failed validation) cannot be pinpointed to a specific function or line in the retrieved source code. All 14 chunks provided are configuration files (.toml, .yaml, .yml, .md, .sh) related to CI/CD, issue templates, and build actions \u2014 none contain authentication logic, password handling, credential validation, or any Rust/Python application code where secrets would be stored in memory buffers. The code retrieval system did not surface the actual authentication middleware, API key handling, or credential validation code that would exhibit this vulnerability.",
+    "chunksSearched": 8672,
+    "id": "8b6dd827-90ac-467d-8614-f2869ee68da1",
+    "stackTrace": "Security audit finding:\nCWE-312: Cleartext Storage of Sensitive Information\nCWE-316: Cleartext Storage of Sensitive Information in Memory\nCVE-2023-4641 pattern: shadow-utils passwd fails to clear password buffer on second entry mismatch\nAffected pattern:\n  1. User enters password (stored in buffer/String)\n  2. User asked to confirm password\n  3. Confirmation fails or mismatches\n  4. First password entry NOT zeroed from memory\n  5. Memory remains readable by attacker with memory access\nLook for: password validation, token comparison, secret confirmation, credential handling, authentication middleware",
+    "chunksUsed": 14
+  },
+  {
+    "repoId": "Saravanan1689/chroma",
     "confidence": "MEDIUM",
     "errorMessage": "ValueError when adding embeddings with mismatched dimensions",
     "analysedAt": "2026-05-16T13:13:02.442196Z",
