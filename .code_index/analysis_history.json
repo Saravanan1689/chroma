@@ -1,6 +1,22 @@
 [
   {
     "repoId": "Saravanan1689/chroma",
+    "confidence": "MEDIUM",
+    "errorMessage": "thread panicked at unwrap on None value in collection query",
+    "analysedAt": "2026-05-16T11:41:36.742269Z",
+    "feedbackReceived": false,
+    "affectedFiles": ["src/collection.rs:87"],
+    "suggestedFix": "In `src/collection.rs` at line 87 within the `Collection::query` method, replace the `.unwrap()` call with a proper check. For example, if the code is something like `self.index.unwrap()` or `self.embeddings.as_ref().unwrap()`, change it to return an appropriate error when the collection is empty:\n\n```rust\n// Before (line 87):\nlet index = self.index.unwrap();\n\n// After:\nlet index = self.index.as_ref().ok_or_else(|| {\n    ChromaError::EmptyCollection(\"Cannot query a collection with no embeddings\".to_string())\n})?;\n```\n\nThis ensures that querying an empty collection returns a meaningful error instead of panicking.",
+    "branch": "main",
+    "errorSignature": "014991d552aefa8105ba23b4922bcea4ab683da33bb8dd46e47235726610166f",
+    "rootCause": "The crash occurs in `src/collection.rs:87` in the `Collection::query` method, where an `Option::unwrap()` is called on a `None` value. This happens when querying a collection that has no embeddings added yet \u2014 the query logic likely attempts to access an internal data structure (e.g., an index or embedding store) that is `None` for an empty collection, and calls `.unwrap()` without first checking if data exists. The source code for `src/collection.rs` is not present in the retrieved chunks, but the stack trace clearly identifies the unwrap at line 87.",
+    "chunksSearched": 8672,
+    "id": "f5e07d99-04b0-4c16-a22c-38763e6a83c0",
+    "stackTrace": "thread main panicked at called Option::unwrap() on a None value\n  at src/collection.rs:87\nnote: run with RUST_BACKTRACE=1 for full backtrace\n  0: rust_begin_unwind\n  1: core::panicking::panic_fmt\n  2:core::option::Option::unwrap\n  3: chroma::collection::Collection::query\n  4: chroma::server::handle_query",
+    "chunksUsed": 5
+  },
+  {
+    "repoId": "Saravanan1689/chroma",
     "confidence": "LOW",
     "errorMessage": "thread panicked at unwrap on None value in collection",
     "analysedAt": "2026-05-16T11:39:35.268198Z",
