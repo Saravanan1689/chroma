@@ -2,6 +2,25 @@
   {
     "repoId": "Saravanan1689/chroma",
     "confidence": "MEDIUM",
+    "errorMessage": "ValueError when adding embeddings with mismatched dimensions",
+    "analysedAt": "2026-05-16T13:13:02.442196Z",
+    "feedbackReceived": false,
+    "affectedFiles": [
+      "chromadb/api/local.py:134",
+      "chromadb/api/models/Collection.py:89"
+    ],
+    "suggestedFix": "This is expected validation behavior \u2014 the fix is on the caller side. If users want to provide raw embeddings, they should either: (1) ensure the embeddings match the collection's dimension (384 if using the default embedding function), (2) pass `documents` without `embeddings` to let the configured embedding function generate the correct-dimension vectors, or (3) create the collection with an `embedding_function=None` and consistently provide embeddings of the same dimension. If better UX is desired, the error message in `local.py:_add` could be improved to suggest these options:\n\n```python\n# In chromadb/api/local.py, around line 134:\nif embedding_dim != collection_dim:\n    raise ValueError(\n        f\"Embedding dimension {embedding_dim} does not match collection dimension {collection_dim}. \"\n        f\"If you are providing raw embeddings, ensure they have {collection_dim} dimensions. \"\n        f\"If you want to use a different dimension, create a new collection or omit the embeddings \"\n        f\"parameter to use the collection's configured embedding function.\"\n    )\n```",
+    "branch": "main",
+    "errorSignature": "70b55abcf528a39b1d92d5fcdb331dbbaff1db4a4c558ec5a3affd9f80b4223e",
+    "rootCause": "The error occurs in `chromadb/api/local.py` at line 134 in the `_add` method, which validates that the embedding dimension of the provided vectors matches the collection's configured dimension. The user is passing embeddings with dimension 2 (e.g., `[[1.0, 2.0]]`) to a collection that was previously created or configured with dimension 384 (likely from a default embedding function such as SentenceTransformer). This is a user-facing validation error rather than a code bug \u2014 the collection's dimension was set to 384 (either explicitly or by a prior add/embedding function), and the subsequent add call provides raw 2-dimensional embeddings that conflict with that schema.",
+    "chunksSearched": 8672,
+    "id": "8622fbb4-b877-4d9e-bf5a-8af40cacef06",
+    "stackTrace": "Traceback (most recent call last):\n  File test_client.py, line 12, in module\n    collection.add(embeddings=[[1.0, 2.0]], documents=[doc1], ids=[id1])\n  File chromadb/api/models/Collection.py, line 89, in add\n  self._client._add(self.id, embeddings, metadatas, documents, ids)\n  File chromadb/api/local.py, line 134, in _add\n    raise ValueError(Embedding dimension 2 does not match collection dimension 384)\nValueError: Embedding dimension 2 does not match collection dimension 384",
+    "chunksUsed": 14
+  },
+  {
+    "repoId": "Saravanan1689/chroma",
+    "confidence": "MEDIUM",
     "errorMessage": "thread panicked at unwrap on None value in collection query",
     "analysedAt": "2026-05-16T11:41:36.742269Z",
     "feedbackReceived": false,
