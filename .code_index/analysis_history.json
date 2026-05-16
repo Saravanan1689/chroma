@@ -1,19 +1,37 @@
-[{
-  "repoId": "Saravanan1689/chroma",
-  "confidence": "LOW",
-  "errorMessage": "NullPointerException when adding documents to collection",
-  "analysedAt": "2026-05-16T11:35:49.018470Z",
-  "feedbackReceived": false,
-  "affectedFiles": [
-    "chromadb/Collection.java:142",
-    "chromadb/Client.java:88"
-  ],
-  "suggestedFix": "In `Collection.add()` (Collection.java, around line 142), add a null/empty check for the metadata parameter before processing it. For example:\n```java\n// Before accessing metadata in Collection.add()\nif (metadata == null) {\n    metadata = new HashMap<>();\n}\n// Or guard the specific dereference:\nif (metadata != null && !metadata.isEmpty()) {\n    // process metadata\n}\n```\nEnsure that `Client.createCollection()` at line 88 also passes a non-null default (e.g., `Collections.emptyMap()`) when no metadata is provided by the caller.",
-  "branch": "main",
-  "errorSignature": "847317970c7f1e7d9134b9de2cdf473558155e78287e3b9139a722fc34d41b00",
-  "rootCause": "The NullPointerException occurs in `Collection.add()` at line 142 (Collection.java) when empty metadata is passed. The method likely accesses metadata properties without a null check, assuming metadata is always a non-null, non-empty map. When `createCollection` is called at Client.java:88, it flows into `Collection.add()` which dereferences the metadata parameter (or an internal metadata field) without guarding against null/empty values. The actual source code for the Java client (Collection.java, Client.java) is not present in the retrieved chunks, so the exact variable cannot be confirmed from the provided code.",
-  "chunksSearched": 8672,
-  "id": "d48c5453-09bb-4aca-9675-32761e1039a1",
-  "stackTrace": "java.lang.NullPointerException\n\tat chromadb.Collection.add(Collection.java:142)\n\tat chromadb.Client.createCollection(Client.java:88)",
-  "chunksUsed": 14
-}]
+[
+  {
+    "repoId": "Saravanan1689/chroma",
+    "confidence": "LOW",
+    "errorMessage": "thread panicked at unwrap on None value in collection",
+    "analysedAt": "2026-05-16T11:39:35.268198Z",
+    "feedbackReceived": false,
+    "affectedFiles": ["<unknown \u2014 no relevant source code retrieved>"],
+    "suggestedFix": "Unable to provide a concrete fix without visibility into the crash site. The general fix would be to replace `.unwrap()` with proper error handling (`.ok_or(...)?` or pattern matching) wherever a collection lookup returns `Option<Collection>` and is unwrapped without a None check. A full stack trace or the specific file/line where the panic occurs is needed to identify the exact location.",
+    "branch": "main",
+    "errorSignature": "e0a7549fd514b6757d58f5e734f033ac5e1fd0b694ae7cd45253ff8628a8d462",
+    "rootCause": "The bug report is too vague (\"thread panicked at unwrap on None value in collection\") and none of the retrieved source code chunks contain actual code \u2014 they are all empty fallback chunks from api-types and benchmark crates with no visible function bodies. Without a stack trace pointing to a specific file/line and without relevant source code containing `.unwrap()` calls on `Option` types related to \"collection\" operations, the root cause cannot be determined from the available information. The crash likely occurs in a collection-related operation (e.g., getting a collection by ID/name) where an `.unwrap()` is called on a `None` value instead of proper error handling, but the specific location is not visible in the retrieved code.",
+    "chunksSearched": 8672,
+    "id": "737acbbe-b5a0-41ce-bcad-527f12554713",
+    "stackTrace": "",
+    "chunksUsed": 13
+  },
+  {
+    "repoId": "Saravanan1689/chroma",
+    "confidence": "LOW",
+    "errorMessage": "NullPointerException when adding documents to collection",
+    "analysedAt": "2026-05-16T11:35:49.018470Z",
+    "feedbackReceived": false,
+    "affectedFiles": [
+      "chromadb/Collection.java:142",
+      "chromadb/Client.java:88"
+    ],
+    "suggestedFix": "In `Collection.add()` (Collection.java, around line 142), add a null/empty check for the metadata parameter before processing it. For example:\n```java\n// Before accessing metadata in Collection.add()\nif (metadata == null) {\n    metadata = new HashMap<>();\n}\n// Or guard the specific dereference:\nif (metadata != null && !metadata.isEmpty()) {\n    // process metadata\n}\n```\nEnsure that `Client.createCollection()` at line 88 also passes a non-null default (e.g., `Collections.emptyMap()`) when no metadata is provided by the caller.",
+    "branch": "main",
+    "errorSignature": "847317970c7f1e7d9134b9de2cdf473558155e78287e3b9139a722fc34d41b00",
+    "rootCause": "The NullPointerException occurs in `Collection.add()` at line 142 (Collection.java) when empty metadata is passed. The method likely accesses metadata properties without a null check, assuming metadata is always a non-null, non-empty map. When `createCollection` is called at Client.java:88, it flows into `Collection.add()` which dereferences the metadata parameter (or an internal metadata field) without guarding against null/empty values. The actual source code for the Java client (Collection.java, Client.java) is not present in the retrieved chunks, so the exact variable cannot be confirmed from the provided code.",
+    "chunksSearched": 8672,
+    "id": "d48c5453-09bb-4aca-9675-32761e1039a1",
+    "stackTrace": "java.lang.NullPointerException\n\tat chromadb.Collection.add(Collection.java:142)\n\tat chromadb.Client.createCollection(Client.java:88)",
+    "chunksUsed": 14
+  }
+]
